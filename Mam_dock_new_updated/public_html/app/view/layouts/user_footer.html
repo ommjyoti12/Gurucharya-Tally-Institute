@@ -1,0 +1,91 @@
+<!-- ==================== -->
+<!-- Footer Section Start -->
+<!-- ==================== -->
+<footer class="foooter">
+    <div class="container">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.567114387261!2d85.82021581428647!3d20.359494215665023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19093be57f4afb%3A0x2d022e801f0db671!2sMalus%20Technology!5e0!3m2!1sen!2sin!4v1645685001211!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+
+        <div class="row footer_row">
+
+            <!-- Col 1 -->
+            <div class="col-lg-4 col-md-4 footer_about">
+                <p>Gurucharya — you learn and grow exactly how you would on a real job. Start from the fundamentals, get mentored, and build your way to the top.</p>
+                <p class="copy_right">© Copyright <?php echo date("Y"); ?> Gurucharya. All rights reserved.</p>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="col-lg-4 col-md-4 text-center footer_middle">
+                <a href="index">
+                    <img class="logo" src="public/images/logo.png" alt="Gurucharya"/>
+                </a>
+                <ul class="cul d-flex list-unstyled justify-content-center p-0 gap-3">
+                    <li><a href="https://www.facebook.com/gurucharya" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/gurucharyabbsr/" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://bit.ly/4e2Nj1A" target="_blank" title="Google"><i class="fa fa-google"></i></a></li>
+                    <li><a href="https://www.youtube.com/@gurucharya" target="_blank" title="YouTube"><i class="fa fa-youtube-play"></i></a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="col-lg-4 col-md-4 footer_right">
+                <ul class="list-unstyled d-flex gap-3 footer_links">
+                    <li><a href="index">Home</a></li>
+                    <li><a href="courses">Courses</a></li>
+                    <li><a href="contact">Contact</a></li>
+                    <li><a href="contact">Quick Inquiry</a></li>
+                </ul>
+                <ul class="list-unstyled footer_contact">
+                    <li>
+                        <span class="fc-icon"><img src="public/images/icons/call.svg" alt="Phone"></span>
+                        <span>+91 70083 76549</span>
+                    </li>
+                    <li>
+                        <span class="fc-icon"><img src="public/images/icons/location.svg" alt="Location"></span>
+                        <span>Plot No.: 1501/4468, Beside Iskcon Temple, RBI Colony, Nayapalli, Bhubaneswar, Odisha 751015</span>
+                    </li>
+                    <li>
+                        <span class="fc-icon"><img src="public/images/icons/mail.svg" alt="Email"></span>
+                        <span>gurucharya@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<!-- ========== -->
+<!-- End Footer -->
+<!-- ========== -->
+
+<script src="public/js/bootstrap.bundle.min.js"></script>
+<script src="public/js/swiper.js"></script>
+<script src="public/js/aos.js"></script>
+<script src="public/js/font-awesome.js"></script>
+
+<script>
+    // Initialize standard swipers (like Testimonial slider) - fullpage swiper removed
+    var swiper = new Swiper(".testimonial_slider", {
+        speed: 600,
+        parallax: true,
+        lazy: { loadPrevNext: true },
+        mousewheel: false,
+        scrollbar: { el: '.swiper-scrollbar' },
+        navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+    });
+
+    AOS.init({ duration: 900, once: true });
+</script>
+
+<script>
+    let menutoggle = document.querySelector('.toggle');
+    menutoggle.onclick = function () {
+        menutoggle.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
